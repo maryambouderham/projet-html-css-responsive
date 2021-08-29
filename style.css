@@ -1,0 +1,86 @@
+/*------header----*/
+header img {
+    width: 150px;
+    height: 130px;
+    align-self: center;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+  
+}
+body{
+    background-color: #f6f6f6;
+
+}
+h1{
+    text-transform: uppercase;
+    color: #24c4b9 ;
+}
+/*----------nav-----*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    text-align: center;
+    padding: 20px;
+    background-color: #24c4b9 ;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+/*-------main------*/
+main img{
+    display: none;
+    width: 100%;
+}
+/*--------aside--------*/
+aside{
+    display: none;
+    background-color: #3ce7679f;
+    padding: 10px;
+}
+/*------partie mobile------*/
+@media screen and (max-width:767px){
+    img[alt="mobile"]{
+        display: block;
+    }
+   
+}
+/*------partie tablette------*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    img[alt="tablette"] {
+        display: block;
+    }
+    section article span{
+        color: turquoise;
+    }
+}
+/*--------partie desktop-------*/
+@media screen and (min-width:1024px) {
+    img[alt="desktop"] {
+        display: block;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 68% 30%;
+        justify-content: space-between;
+    }
+}
+/*------partie desktop et tablette-----*/
+@media screen and (min-width:768px)  {
+    aside {
+        display: block;
+        
+    }
+}
+
+ 
+ 
+    
